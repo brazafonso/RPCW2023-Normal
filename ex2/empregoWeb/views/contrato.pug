@@ -1,0 +1,93 @@
+extends layout
+
+block content
+  .w3-card-4
+    header.w3-container.w3-teal
+      h1 Contrato nº #{contrato._id}
+
+    .w3-container
+        p 
+            b _id: 
+            a= contrato._id 
+        p 
+            b NomeInstituicao: 
+            a= contrato.NomeInstituicao 
+        p 
+            b NIPCInstituicao:  
+            a= contrato.NIPCInstituicao 
+        p 
+            b NomeTitularContrato: 
+            a= contrato.NomeTitularContrato 
+        p 
+            b CienciaID: 
+            a= contrato.CienciaID 
+        p 
+            b ORCID: 
+            a= contrato.ORCID 
+        p 
+            b CienciaVitae: 
+            a= contrato.CienciaVitae 
+        p 
+            b Carreira_RPN: 
+            a=contrato.Carreira_RPN 
+        p 
+            b Categoria_RPN: 
+            a=contrato.Categoria_RPN 
+        p 
+            b Vinculo_RPN: 
+            a=contrato.Vinculo_RPN 
+        p 
+            b RegimePrestacaoServico: 
+            a=contrato.RegimePrestacaoServico 
+        p 
+            b DataInicioContrato: 
+            a=contrato.DataInicioContrato 
+        p 
+            b DataFimContrato: 
+            a=contrato.DataFimContrato 
+        p 
+            b ETIremunerado: 
+            a=contrato.ETIremunerado 
+        p 
+            b ProcedimentoVinculacao: 
+            a=contrato.ProcedimentoVinculacao 
+        p 
+            b AreasInvestigacao: 
+            a=contrato.AreasInvestigacao 
+        p 
+            b NivelFormação: 
+            a=contrato.NivelFormação 
+        p 
+            b InstituicaoEnsino: 
+            a=contrato.InstituicaoEnsino 
+        p 
+            b PaisInstituição: 
+            a=contrato.PaisInstituição 
+        p 
+            b AnoDiploma: 
+            a=contrato.AnoDiploma 
+        p 
+            b Curso: 
+            a=contrato.Curso 
+        p 
+            b AreaCNAEF: 
+            a=contrato.AreaCNAEF 
+        p 
+            b AreaFORD: 
+            a=contrato.AreaFORD 
+        p 
+            b ProvasAgregacao: 
+            a=contrato.ProvasAgregacao 
+        p 
+            b TituloEspecialista: 
+            a=contrato.TituloEspecialista 
+        p 
+            b ProvasCoordenacao: 
+            a=contrato.ProvasCoordenacao 
+        p 
+            b ProvasAptidao: 
+            a=contrato.ProvasAptidao 
+
+    footer.w3-container.w3-teal
+      h5 #[a(href="/" ) Página principal]
+

@@ -1,0 +1,27 @@
+A persistência de dados foi realizada com recurso ao mongoDB. A base de dados criada tem o nome de scienceJobs e a collection o nome de contracts.
+O dataset proposto não sofreu quaisquer alterações, sendo o id de cada contrato definido pelo próprio mongoDB.
+Para criar a base de dados foi usado o mongo compass, e de igual modo para a inserção de dados na collection (inserindo o json fornecido).
+Criando na linha de comandos seria mongoimport -d scienceJobs -c contracts --file emprego-cientifico.json --jsonArray.
+
+
+
+Respostas Textuais:
+Exercicio 1.2
+
+    a)  db.contracts.countDocuments() = 17943
+
+    b) db.contracts.find({NomeInstituicao:"Universidade do Minho"}).count() = 166
+
+    c) db.contracts.aggregate([{ $sort: { AreaCNAEF: 1 } }, { $group: { _id: "$_id", AreaCNAEF: { $push: "$AreaCNAEF" } }}]).projection({_id:0})
+
+    d)
+
+    e)
+
+Api do exercicio 1:
+Para iniciar a api, entrar na pasta empregoAPI e fazer primeiro npm i http-errors mongoose express --save.
+Para iniciar, npm start.
+
+Web app do exercicio 2:
+Para iniciar a api, entrar na pasta empregoWeb e fazer primeiro npm i http-errors axios express --save.
+Para iniciar, npm start.
